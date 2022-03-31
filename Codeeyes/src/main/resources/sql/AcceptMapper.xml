@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org/DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="AcceptMapper">
+
+<select id="getAcceptList" resultType="com.ktds.codeeyes.model.AcceptVO">     <!-- resultType 본인 환경에 맞게 수정 필요 -->
+
+	SELECT cno, ito_serv_domain, ito_std_cd, ito_std_nm, ito_process, ito_regdate 
+	FROM ito_inspect_content
+
+</select>
+
+</mapper>

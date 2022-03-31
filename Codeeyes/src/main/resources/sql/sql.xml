@@ -4,11 +4,22 @@
 
 
 <mapper namespace="sql">
-
-<select id="sel" resultType="ktds.codeeyes.portal.HomeDto">     <!-- resultType 본인 환경에 맞게 수정 필요 -->
+ 
+<!-- resultType 본인 환경에 맞게 수정 필요 -->
+<!--  
+<select id="sel" resultType="ktds.codeeyes.portal.test.HomeDto">     
 
 	SELECT * FROM test
 
 </select>
+-->
 
+<!-- 
+<select id="getAcceptList" resultType="ktds.codeeyes.portal.model.AcceptVO">     
+
+	SELECT cno, ito_serv_domain, ito_std_cd, ito_std_nm, ito_process, ito_regdate 
+	FROM ito_inspect_content
+
+</select>
+-->
 </mapper> 
